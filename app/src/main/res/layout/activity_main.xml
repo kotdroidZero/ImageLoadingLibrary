@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    tools:context="com.error_found.kotdroid.imageloading.MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingRight="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:text="Glide Library"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/iv_glide1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/square_bg" />
+
+        <ImageView
+            android:id="@+id/iv_glide2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/square_bg" />
+
+        <ImageView
+            android:id="@+id/iv_glide3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/square_bg" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:text="Fresco Library"
+            android:textColor="@android:color/black" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_fresco1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            fresco:viewAspectRatio="1.33"
+            fresco:retryImage="@drawable/retry"
+            fresco:failureImage="@drawable/error"
+            fresco:placeholderImage="@drawable/placeholder"
+            fresco:roundAsCircle="true"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/square_bg" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_fresco2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            fresco:placeholderImage="@drawable/placeholder"
+            fresco:pressedStateOverlayImage="@color/colorPrimary"
+            fresco:roundingBorderWidth="5dp"
+            fresco:roundingBorderColor="@android:color/holo_red_dark"
+            fresco:roundedCornerRadius="40dp"
+            fresco:viewAspectRatio="8"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/square_bg" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_fresco3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/square_bg" />
+    </LinearLayout>
+
+
+</LinearLayout>
